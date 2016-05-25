@@ -1,0 +1,36 @@
+﻿<html>
+	<head>
+		<title>GW2爬分非洲人</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+		<script type="text/javascript" src="index.js"></script> 
+		<link href="index.css" rel="stylesheet" type="text/css" >
+	</head>
+	<body>
+		<div class='main'>
+			<div class='context'>
+				<h1>GW2 Ranked 爬分非洲人</h1>
+				<input type='number' id='rate'><label>勝率</label><br>
+				<input type='number' id='currentPip'><label>目前總計pips數</label><br>
+				<input type='number' id='goalPip'><label>目標總pips數</label><br>
+				<p>
+					總pip數指的是從黃寶0開始算起你已經得到多少pip
+					<ul>
+						<li>綠寶0分=15pips</li>
+						<li>藍寶0分=35pips</li>
+						<li>紅寶0分=60pips</li>
+						<li>紅寶0分=90pips</li>
+						<li>傳奇0分=125pips</li>
+					</ul>
+				</p>
+				<p>出現9500以上的場數表示連電腦都算不出你要打幾場，還是回家洗洗睡</p>
+				<button id='go' onclick="test();">萬人試爬測試開始!</button>
+				<button id='goActual' onclick="actualTest();">精準萬人試爬測試開始!</button>
+				<button id='goSingle' onclick="singleTest();">單人試爬模擬開始!</button>
+			</div>
+			<div class='context'>
+				<p id='result'></p>
+			</div>
+		</div>
+	</body>
+</html>
